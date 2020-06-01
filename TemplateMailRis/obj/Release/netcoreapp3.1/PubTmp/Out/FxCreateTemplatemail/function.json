@@ -1,0 +1,18 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions-3.0.3",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "route": "createTemplateMail",
+      "methods": [
+        "post"
+      ],
+      "authLevel": "function",
+      "name": "req"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/TemplateMailRis.dll",
+  "entryPoint": "TemplateMailRis.FxCreateT.Run"
+}
