@@ -41,7 +41,7 @@ namespace TemplateMailRis
                 listasTemplate = new cnxgetListTempalte(codcli, codPro);
             }
             (var registros, var errorSqlEx) = listasTemplate.GetTemplate();
-            if (errorSqlEx.Length > 1)
+            if (errorSqlEx.Length >= 1)
             {
                 respuesta = new HttpResponseMessage(HttpStatusCode.Unauthorized)
                 {
